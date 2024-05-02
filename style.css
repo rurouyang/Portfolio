@@ -1,0 +1,77 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@600&family=Noto+Sans+TC:wght@100;400&family=Open+Sans&display=swap');
+
+*{ margin: 0; padding: 0; }
+html,body{ font-family:'Sinhala MN',Helvetica,Arial,'Noto Sans TC','黑體-繁','Heiti TC','微軟正黑體','Microsoft JhengHei',sans-serif; }
+img{  width: 100%; /* 自適應網頁大小 */  display: block;/* 取消inline-block預設間距 */ }
+h1{ letter-spacing: 1px; }
+a{ text-decoration: none; } 
+ul li{ list-style-type: none; }
+
+
+.header{ position: relative; width: 100%; height: 90vh; }
+.header_inner{ display: flex; }
+.bg_info{ width: 100%; position: absolute; margin: auto; padding-top: 14rem; }
+.bg_info .logo_img{ width: 100px; height: 100%; margin: auto; }
+.bg_info .header_title h2{  font-size: 30px; letter-spacing: 6px; font-weight: normal; color: #d1d1d1; text-align:center; padding-top: 2rem; }
+.header .bg_showing{ width: 100%; height: 90vh; background-image: url('/images/LINE_ALBUM_Portfolio首圖_240502_3.jpg') ; background-size: cover; background-position: center; }
+nav.navbar{ max-width: 98%; display: flex; justify-content: space-around; align-items: center; margin: auto; margin-top: 2rem; margin-bottom: 4rem; }
+nav.navbar a{ color: #4e4e4e; }
+nav.navbar .nav-container{ width: 42%; display: flex; justify-content: space-between; align-items: center; }
+nav.navbar .page-title a { color: #fff; background-color: #EDD765; padding: 4px 12px; border-radius: 20px; }
+nav.navbar .nav-container .gallery-title a:hover{ color: #EDD765; }
+.logo-container .logo h2{ color: #4e4e4e;; font-size: 22px; font-weight: normal; }
+.social-media ul { width: 100%; display: flex; justify-content: space-between; margin: 0; padding-left: 1rem; }
+.social-media ul li i{ color:  #EDD765; font-size: 24px; padding-right: 10px; }
+.social-media ul li i:hover{ color: #4e4e4e; }
+/* .main_inner input{ display: none; }
+.navbar_inner .menu_btn{ display: none !important;  position: absolute;  top: 44px;  right: 60px;  display: flex; justify-content: space-evenly; flex-direction: column;  width: 30px;  height: 24px; cursor: pointer; }
+.navbar_inner .menu_btn .t{ position: relative; width: 30px; height: 3px; border-radius: 10px; margin: 0 auto; overflow: hidden; transform-origin: center center; }
+.navbar_inner .menu_btn .t:before, .navbar_inner .menu_btn .t:after{ content: '';  display: block;  width: 30px;  height: 3px; position: absolute;  top: 0;  bottom: 0;  border-radius: 10px;  background: #aaaaaa; transition: all .5s .1s cubic-bezier(.19,1,.22,1); } */
+.gallery-row{ max-width: 90%; display: flex; justify-content: space-evenly; margin: auto; }
+.gallery-row li{ position: relative; width: 30%; height: 250px; background-color: #dddddd; margin-bottom: 2rem; overflow: hidden; }
+.gallery-row .col-3-1{ width: 31%; height: 250px; background-image: url('/images/1200x628.jpg'); background-size: cover; background-position: center; }
+.gallery-row .col-3-2{ width: 31%; height: 250px; background-image: url('/images/lpD-DAY.jpg'); background-size: cover; background-position: center; }
+.gallery-row .col-3-3{ width: 31%; height: 250px; background-image: url('/images/lpsep_00.jpg'); background-size: cover; background-position: center; }
+.gallery-row .col-3-4{ width: 31%; height: 250px; background-image: url('/images/mommyDM.jpg'); background-size: cover; background-position: center; }
+.gallery-row .col-3-5{ width: 31%; height: 250px; background-image: url('/images/mommypop.png'); background-size: cover; background-position: center; }
+.gallery-row .col-3-6{ width: 31%; height: 250px; background-image: url('/images/mommy2.jpg'); background-size: cover; background-position: center; }
+.gallery-row .col-4-1{ width: 31%; height: 250px; background-image: url('/images/bravo2.jpg'); background-size: cover; background-position: top; }
+.gallery-row .col-4-2{ width: 31%; height: 250px; background-image: url('/images/bravo.jpg'); background-size: cover; background-position: center; }
+.gallery-row .col-4-3{ width: 31%; height: 250px; background-image: url('/images/bravo1.jpg'); background-size: cover; background-position: center; }
+.gallery-row .col-4-4{ width: 31%; height: 250px; background-image: url('/images/IGbanner.jpg'); background-size: cover; background-position: top; }
+.gallery-row .col-4-5{ width: 31%; height: 250px; background-image: url('/images/DM.jpg'); background-size: cover; background-position: center; }
+.gallery-row .col-4-6{ width: 31%; height: 250px; background-image: url('/images/rabitpeterDM.jpg'); background-size: cover; background-position: center; }
+.gallery-row li .mask{ position: absolute; text-align: center; width: 100%; top: 0; height: 100%; opacity: 0; background-color: #edd665e3; }
+.gallery-row li .mask:hover{ opacity: 1; transition: 0.5s ; }
+.gallery-row li .group_txt{ position: absolute; width: 100%; top: 0; padding-top: 6rem; opacity: 0; }
+.gallery-row li .group_txt:hover{ opacity: 1; transition: ; }
+.gallery-row li .group_txt h3{ font-size: 20px; color: #fff; padding-bottom: 8px; letter-spacing: 4px; }
+.gallery-row li .group_txt:hover h3{ transform: translateY(-10px); transition:0.3s; transition-delay: 0.2s; }
+.gallery-row li .group_txt p{ font-size: 14px; color: #9c8b33; }
+.gallery-row li .group_txt:hover p{ transform: translateY(10px); transition:0.3s; transition-delay: 0.2s;  }
+.scroll_arrow{ width: 100%; margin-top: 2rem; margin-bottom: 4rem; text-align: center; }
+.scroll_arrow a{ color: #EDD765; font-family: vcsm; font-size: 22px; font-style: normal; }
+
+
+
+/* ⼩型設備(⼩型平板電腦和⼤型⼿手機，414px及以下)*/
+@media only screen and (max-width: 767px){
+    .bg_info{ padding-top: 12rem; }
+    nav.navbar{ flex-direction: column; margin: 2rem auto;  }
+    nav.navbar .nav-container{ width: 70%; height: 80px; flex-wrap: wrap; justify-content: space-around; margin-top: 2rem; }
+    .social-media ul{ padding-left: 1rem; }
+    .navbar_inner .menu_btn{ display: flex !important; z-index: 999; }
+    /* #menu_control { z-index: -2; opacity: 0; width: 1px; height: 1px; } */
+    /* .menu_btn.open{ height: 15px; }
+    .menu_btn.open .t1{ transform: translate(0,0) rotate(45deg); transition: all 500ms cubic-bezier(0.68, -0.55, 0.265, 1.55); }
+    .menu_btn.open .t2{ transform: translate(0,-6px) rotate(-45deg); transition: all 500ms cubic-bezier(0.68, -0.55, 0.265, 1.55); }
+    .navbar_inner .menu{ width: 100%;  height: 100vh;  background-color: #9c8b33; position: absolute;  top: 0; left: 0;  opacity: 0;  visibility: hidden;  transform: scaleY(0);  transition: .5s;  padding-top: 10rem;  z-index: 10;  }
+    #menu_control:checked ~  .navbar_inner .menu{ transform: scaleY(1); transform-origin: 0 0; opacity: 1; visibility: visible; transition: all .5s ease; z-index: 600; }
+    .navbar .menu ul li{ width: 100%;  float: none;  padding: 0px; }
+    .navbar_inner .menu .btn_left{ float: none; text-align: center;  align-items: center; left: 0;  right: 0;  margin: auto;  padding-left: 0px;  line-height: 4rem;  }
+    .navbar_inner .menu a{ font-size: 50px;  line-height: 6rem; color: #fff;  }
+    .navbar_inner .menu li a:hover{ color: #000; } */
+    .gallery-row{ flex-direction: column; }
+    .gallery-row .gallery-col{ width: 100%; }
+}
